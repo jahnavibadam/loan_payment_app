@@ -1,9 +1,13 @@
 package com.natwest.PersonalLoanDocsService.service;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.natwest.PersonalLoanDocsService.model.FileInfo;
 import com.natwest.PersonalLoanDocsService.model.FileProps;
+import com.natwest.PersonalLoanDocsService.model.LoanInfo;
 import com.natwest.PersonalLoanDocsService.repository.PersonalLoanDocRepository;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -13,12 +17,17 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 @Service
 public class PersonalLoanDocServiceImpl implements PersonalLoanDocService{
 
     @Autowired
     private PersonalLoanDocRepository personalLoanDocRepository;
+
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
+
 
     @Override
     public void uploadFile(MultipartFile aadhaardCard,
@@ -42,6 +51,9 @@ public class PersonalLoanDocServiceImpl implements PersonalLoanDocService{
         saveFile(addressProof, file.getAddressProof());
         saveFile(bankStatements, file.getBankStatements());
         saveFile(salarySlips, file.getSalarySlips());
+
+        Object loanInfo = new LoanInfo(UUID.randomUUID().toString(),"personal","pending","10000",emi,"10000",tenure, "abc@gmail.com");
+        rabbitTemplate.convertAndSend("rabbitmq_exchangeKey", "rabbitmq_routeKey", loanInfo);
 
         personalLoanDocRepository.save(file);
 
