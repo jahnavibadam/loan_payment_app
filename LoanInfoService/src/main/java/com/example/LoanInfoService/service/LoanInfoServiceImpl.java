@@ -1,10 +1,13 @@
 package com.example.LoanInfoService.service;
 
+import com.example.LoanInfoService.model.Loan;
 import com.example.LoanInfoService.model.LoanInfo;
 import com.example.LoanInfoService.repository.LoanInfoRepository;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class LoanInfoServiceImpl implements LoanInfoService{
@@ -17,5 +20,16 @@ public class LoanInfoServiceImpl implements LoanInfoService{
         //we receive the data from personal loan registry
         System.out.println(loanInfo);
         loanInfoRepository.save(loanInfo);
+    }
+
+    @Override
+    public List<Loan> getAllLoans(String email){
+        return loanInfoRepository.findByUserEmail(email);
+    }
+
+    @Override
+    Loan updateLoan(String email,Loan newLoan, String id){
+        // various operations according to new loan
+        return new Loan();
     }
 }
