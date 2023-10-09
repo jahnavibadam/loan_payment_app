@@ -22,14 +22,14 @@ public class LoanInfoServiceImpl implements LoanInfoService{
         loanInfoRepository.save(loanInfo);
     }
 
-    @Override
-    public List<Loan> getAllLoans(String email){
-        return loanInfoRepository.findByUserEmail(email);
-    }
-
-    @Override
-    Loan updateLoan(String email,Loan newLoan, String id){
-        // various operations according to new loan
-        return new Loan();
-    }
+//    @Override
+//    public List<Loan> getAllLoans(String email){
+//        return loanInfoRepository.findByUserEmail(email);
+//    }
+//
+//    @Override
+//    Loan updateLoan(String email,Loan newLoan, String id){
+//        // various operations according to new loan
+//        return new Loan();
+//    }
 }

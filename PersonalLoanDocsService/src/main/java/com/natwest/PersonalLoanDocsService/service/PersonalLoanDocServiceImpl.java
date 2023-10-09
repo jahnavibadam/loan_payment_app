@@ -15,7 +15,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
@@ -38,7 +40,7 @@ public class PersonalLoanDocServiceImpl implements PersonalLoanDocService{
                            MultipartFile salarySlips,
                            String tenure,
                            String emi,
-                           String aadhaarNumber) throws IOException {
+                           String aadhaarNumber, String firstName, String lastName, String panNumber) throws IOException {
         FileInfo file = new FileInfo();
         file.setLoanType("personal");
         file.setAadhaarNumber(aadhaarNumber);
@@ -52,7 +54,9 @@ public class PersonalLoanDocServiceImpl implements PersonalLoanDocService{
         saveFile(bankStatements, file.getBankStatements());
         saveFile(salarySlips, file.getSalarySlips());
 
-        Object loanInfo = new LoanInfo(UUID.randomUUID().toString(),"personal","pending","10000",emi,"10000",tenure, "abc@gmail.com");
+        String date = LocalDate.now().toString();
+
+        Object loanInfo = new LoanInfo(UUID.randomUUID().toString(),"personal","pending",emi,tenure,tenure,"10000","0","10000","10.49","0","0",date,"abc@gmail.com",aadhaarNumber);
         rabbitTemplate.convertAndSend("rabbitmq_exchangeKey", "rabbitmq_routeKey", loanInfo);
 
         personalLoanDocRepository.save(file);

@@ -11,6 +11,8 @@ public class Loan {
     private String paidEmiNumber;
     private String missedEmi;
     private String tenureLeft;
+    // emi date
+    //loan type
 
     public Loan() {
     }

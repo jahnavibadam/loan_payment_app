@@ -9,5 +9,5 @@ import java.util.List;
 
 @Repository
 public interface LoanInfoRepository extends JpaRepository<LoanInfo, String> {
-    List<Loan> findByUserEmail(String userEmail);
+//    List<Loan> findByUserEmail(String userEmail);
 }

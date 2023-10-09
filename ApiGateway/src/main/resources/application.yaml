@@ -11,8 +11,3 @@ spring:
           uri: "lb://personalLoanDoc-service"
           predicates:
             - Path=/api/v1/loan/personal/docs/**
-
-        - id: personalLoanDocsUpload_route
-          uri: "lb://dummy-service"
-          predicates:
-            - Path=/api/v1/loan/personal/docs/**

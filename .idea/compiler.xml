@@ -6,7 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dummyService" />
         <module name="PersonalLoanDocsService" />
         <module name="DiscoveryService" />
         <module name="ApiGateway" />
@@ -14,6 +13,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="dummyService" target="17" />
       <module name="PersonalLoanDocsServices" target="17" />
     </bytecodeTargetLevel>
   </component>

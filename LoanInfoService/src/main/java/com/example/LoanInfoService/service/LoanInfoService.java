@@ -9,7 +9,7 @@ public interface LoanInfoService {
 
     public void receivedMessage(LoanInfo loanInfo);
 
-    public List<Loan> getAllLoans(String email);
-
-    Loan updateLoan(String email,Loan newLoan, String id);
+//    public List<Loan> getAllLoans(String email);
+//
+//    Loan updateLoan(String email,Loan newLoan, String id);
 }

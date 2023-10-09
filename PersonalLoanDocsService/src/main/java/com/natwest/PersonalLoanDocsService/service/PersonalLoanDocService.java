@@ -15,7 +15,11 @@ public interface PersonalLoanDocService {
                            MultipartFile salarySlips,
                            String tenure,
                            String emi,
-                           String aadhaarNumber) throws IOException;
+                           String aadhaarNumber,
+                           String firstName,
+                           String lastName,
+                           String panNumber
+                           ) throws IOException;
 
     public void getAllFiles();
 }

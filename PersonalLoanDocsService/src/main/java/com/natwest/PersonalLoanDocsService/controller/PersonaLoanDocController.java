@@ -25,9 +25,12 @@ public class PersonaLoanDocController {
                            @RequestParam("salarySlips") MultipartFile salarySlips,
                            @RequestParam("tenure") String tenure,
                            @RequestParam("emi") String emi,
-                           @RequestParam("aadhaarNumber") String aadhaarNumber)
+                           @RequestParam("aadhaarNumber") String aadhaarNumber,
+                           @RequestParam("firstName") String firstName,
+                           @RequestParam("lastName") String lastName,
+                           @RequestParam("panNumber") String panNumber  )
             throws IOException {
-        personalLoanDocService.uploadFile(aadhaardCard, panCard, signatureProof, addressProof, bankStatements, salarySlips, tenure, emi, aadhaarNumber);
+        personalLoanDocService.uploadFile(aadhaardCard, panCard, signatureProof, addressProof, bankStatements, salarySlips, tenure, emi, aadhaarNumber, firstName, lastName, panNumber);
         return "Success";
     }
 

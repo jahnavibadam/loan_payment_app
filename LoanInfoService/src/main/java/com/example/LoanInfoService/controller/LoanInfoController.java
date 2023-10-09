@@ -17,14 +17,14 @@ public class LoanInfoController {
     @Autowired
     private LoanInfoService service;
 
-    @GetMapping("/loanInformation")
-    public List<Loan> getAllLoans(@RequestHeader String email) {
-        return service.getAllLoans(email);
-    }
-
-    @PutMapping("/loanInformation/{id}")
-    public ResponseEntity<?> updateLoanStatus(@RequestHeader String email, @RequestBody Loan newLoan, @PathVariable String id){
-        Loan updatedLoan=service.updateLoan(email,newLoan,id);
-        return new ResponseEntity<>(updatedLoan, HttpStatus.OK);
-    }
+//    @GetMapping("/loanInformation")
+//    public List<Loan> getAllLoans(@RequestHeader String email) {
+//        return service.getAllLoans(email);
+//    }
+//
+//    @PutMapping("/loanInformation/{id}")
+//    public ResponseEntity<?> updateLoanStatus(@RequestHeader String email, @RequestBody Loan newLoan, @PathVariable String id){
+//        Loan updatedLoan=service.updateLoan(email,newLoan,id);
+//        return new ResponseEntity<>(updatedLoan, HttpStatus.OK);
+//    }
 }
