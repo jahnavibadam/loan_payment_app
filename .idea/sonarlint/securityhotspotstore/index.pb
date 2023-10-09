@@ -41,8 +41,6 @@ dPersonalLoanDocsService/src/main/java/com/natwest/PersonalLoanDocsService/confi
 TLoanInfoService/src/main/java/com/example/LoanInfoService/config/RabbitMqConfig.java,d/e/de3c6b9c59090261b2cd8a7a2447d5e8bc9ffe7c
 }
 MLoanInfoService/src/main/java/com/example/LoanInfoService/model/LoanInfo.java,6/c/6c31c10bae8aaa39074889256300bc6eb32bcc0d
-y
-ILoanInfoService/src/main/java/com/example/LoanInfoService/model/Loan.java,2/1/21363a5baef240e75686cf740cd667e2c8f538a4
 s
 Cotpservice/src/main/java/com/example/otpservice/model/OtpModel.java,4/c/4c0f71289a2e944960b418e2ed2bb96e6bad014b
 }

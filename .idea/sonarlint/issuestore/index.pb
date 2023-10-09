@@ -21,8 +21,6 @@ G
 TLoanInfoService/src/main/java/com/example/LoanInfoService/config/RabbitMqConfig.java,d/e/de3c6b9c59090261b2cd8a7a2447d5e8bc9ffe7c
 ”
 dPersonalLoanDocsService/src/main/java/com/natwest/PersonalLoanDocsService/config/RabbitMqConfig.java,1/7/1779d23dd7626a30365ce32ef942a00f1dc523b0
-y
-ILoanInfoService/src/main/java/com/example/LoanInfoService/model/Loan.java,2/1/21363a5baef240e75686cf740cd667e2c8f538a4
 }
 Motpservice/src/main/java/com/example/otpservice/repository/OtpRepository.java,d/2/d25e7a6fe37522d517774cb610e11bddecb559fb
 z
@@ -37,3 +35,15 @@ B
 Motpservice/src/main/java/com/example/otpservice/controller/OtpController.java,3/1/31cd7823c4f2c6c0c40ca67c6aeb60c2eb947358
 {
 Kotpservice/src/main/java/com/example/otpservice/service/OtpServiceImpl.java,b/c/bc7641643a6564b2c42954bd57a475f0d1b27935
+‰
+YLoanInfoService/src/main/java/com/example/LoanInfoService/LoanInfoServiceApplication.java,9/0/9022867c6a583ae6d64d2901a5f40b6a2ba37cf2
+Œ
+\LoanInfoService/src/main/java/com/example/LoanInfoService/controller/LoanInfoController.java,c/8/c853f21e2d69f0a654ab7e8cf2322f418055b5ca
+Œ
+\LoanInfoService/src/main/java/com/example/LoanInfoService/repository/LoanInfoRepository.java,d/b/db1a495b82579d9cb4816ebb6a6099bbc93c5aab
+Š
+ZLoanInfoService/src/main/java/com/example/LoanInfoService/service/LoanInfoServiceImpl.java,a/d/ad72f01d6fc8ba5629a09037d35bf78239e57dad
+†
+VLoanInfoService/src/main/java/com/example/LoanInfoService/service/LoanInfoService.java,2/5/25f349e218d68baed6eb902185638c3012a02501
+}
+MLoanInfoService/src/main/java/com/example/LoanInfoService/model/LoanInfo.java,6/c/6c31c10bae8aaa39074889256300bc6eb32bcc0d
