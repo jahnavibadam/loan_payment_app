@@ -16,3 +16,8 @@ spring:
           uri: "lb://otp-service"
           predicates:
             - Path=/api/v1/otp/**
+
+        - id: loanService_route
+          uri: "lb://loanInfo-service"
+          predicates:
+            - Path=/api/v1/**

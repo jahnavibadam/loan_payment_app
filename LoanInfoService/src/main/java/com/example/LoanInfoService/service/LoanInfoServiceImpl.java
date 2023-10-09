@@ -22,8 +22,8 @@ public class LoanInfoServiceImpl implements LoanInfoService{
     }
 
     @Override
-    public List<LoanInfo> getAllLoans(String email){
-        return loanInfoRepository.findByEmailid(email);
+    public List<LoanInfo> getAllLoans(String emailid){
+        return loanInfoRepository.findByEmailid(emailid);
     }
 //
 //    @Override

@@ -8,5 +8,5 @@ import java.util.List;
 
 @Repository
 public interface LoanInfoRepository extends JpaRepository<LoanInfo, String> {
-   List<LoanInfo> findByEmailid(String emailid);
+   public List<LoanInfo> findByEmailid(String emailid);
 }

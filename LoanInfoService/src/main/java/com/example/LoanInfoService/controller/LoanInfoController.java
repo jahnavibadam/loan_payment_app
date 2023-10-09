@@ -15,8 +15,13 @@ public class LoanInfoController {
     private LoanInfoService service;
 
     @GetMapping("/loanInformation")
-    public List<LoanInfo> getAllLoans(@RequestBody String email) {
-        return service.getAllLoans(email);
+    public List<LoanInfo> getAllLoans(@RequestHeader String emailid) {
+        return service.getAllLoans(emailid);
+    }
+
+    @GetMapping("/test")
+    public String test(){
+        return "Loan Controller works";
     }
 //
 //    @PutMapping("/loanInformation/{id}")

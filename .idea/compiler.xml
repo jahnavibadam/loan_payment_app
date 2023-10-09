@@ -14,6 +14,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="AuthenticationService" target="20" />
       <module name="dummyService" target="17" />
       <module name="PersonalLoanDocsServices" target="17" />
     </bytecodeTargetLevel>
@@ -21,6 +22,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ApiGateway" options="-parameters" />
+      <module name="AuthenticationService" options="-parameters" />
       <module name="DiscoveryService" options="-parameters" />
       <module name="LoanInfoService" options="-parameters" />
       <module name="PersonalLoanDocsService" options="-parameters" />
