@@ -1,6 +1,5 @@
 package com.example.LoanInfoService.service;
 
-import com.example.LoanInfoService.model.Loan;
 import com.example.LoanInfoService.model.LoanInfo;
 import com.example.LoanInfoService.repository.LoanInfoRepository;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
@@ -22,10 +21,10 @@ public class LoanInfoServiceImpl implements LoanInfoService{
         loanInfoRepository.save(loanInfo);
     }
 
-//    @Override
-//    public List<Loan> getAllLoans(String email){
-//        return loanInfoRepository.findByUserEmail(email);
-//    }
+    @Override
+    public List<LoanInfo> getAllLoans(String email){
+        return loanInfoRepository.findByEmailid(email);
+    }
 //
 //    @Override
 //    Loan updateLoan(String email,Loan newLoan, String id){
