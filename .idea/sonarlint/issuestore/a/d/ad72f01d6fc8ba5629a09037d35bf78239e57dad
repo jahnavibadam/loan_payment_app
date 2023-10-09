@@ -1,9 +1,0 @@
-
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ž§üªýÿÿÿÿ8Žèžý¯1
-L	java:S106"+Replace this use of System.out by a logger.(ïßÁîúÿÿÿÿ8—†Õ™±1
-X	java:S125"<This block of commented-out lines of code should be removed.(’”É†8åµÌ—±1
-`
-java:S1128"CRemove this unused import 'com.example.LoanInfoService.model.Loan'.(¦¦”„8ÝÈ×™±1
-M
-java:S1128
-"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ÝÈ×™±1
