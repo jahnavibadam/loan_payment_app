@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="PersonalLoanDocsService" />
+        <module name="otpservice" />
         <module name="DiscoveryService" />
         <module name="ApiGateway" />
         <module name="LoanInfoService" />
@@ -25,6 +26,7 @@
       <module name="PersonalLoanDocsService" options="-parameters" />
       <module name="PersonalLoanDocsServices" options="-parameters" />
       <module name="dummyService" options="-parameters" />
+      <module name="otpservice" options="-parameters" />
     </option>
   </component>
 </project>

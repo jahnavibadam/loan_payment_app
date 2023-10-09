@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/../LoanInfoService/pom.xml" />
         <option value="$PROJECT_DIR$/LoanInfoService/pom.xml" />
         <option value="$USER_HOME$/Downloads/dummyService/pom.xml" />
+        <option value="$USER_HOME$/Downloads/otpservice/pom.xml" />
+        <option value="$PROJECT_DIR$/otpservice/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
