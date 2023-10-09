@@ -4,7 +4,6 @@ package com.example.otpservice.service;
 import com.example.otpservice.model.OtpModel;
 import com.example.otpservice.repository.OtpRepository;
 import com.vonage.client.VonageClient;
-import com.vonage.client.sms.MessageStatus;
 import com.vonage.client.sms.SmsSubmissionResponse;
 import com.vonage.client.sms.messages.TextMessage;
 import org.springframework.beans.factory.annotation.Autowired;
