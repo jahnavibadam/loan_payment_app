@@ -2,8 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/ApiGateway/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/AuthenticationService/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/AuthenticationService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ApiGateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CarLoanDataService/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CarLoanDataService/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DiscoveryService/src/main/java" charset="UTF-8" />
@@ -16,6 +15,8 @@
     <file url="file://$PROJECT_DIR$/LoanInfoService/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/PersonalLoanDocsService/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/PersonalLoanDocsService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RegisterLoginService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RegisterLoginService/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/otpservice/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/otpservice/src/main/resources" charset="UTF-8" />
   </component>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
@@ -13,12 +14,11 @@
         <option value="$PROJECT_DIR$/../dummyService/pom.xml" />
         <option value="$PROJECT_DIR$/../otpservice/pom.xml" />
         <option value="$PROJECT_DIR$/otpservice/pom.xml" />
-        <option value="$PROJECT_DIR$/AuthenticationService/AuthenticationService/pom.xml" />
         <option value="$PROJECT_DIR$/../GoldLoanService -MS/pom.xml" />
         <option value="$PROJECT_DIR$/GoldLoanService -MS/pom.xml" />
         <option value="$PROJECT_DIR$/HomeLoanDocsService/pom.xml" />
-        <option value="$PROJECT_DIR$/AuthenticationService/pom.xml" />
         <option value="$PROJECT_DIR$/CarLoanDataService/pom.xml" />
+        <option value="$PROJECT_DIR$/RegisterLoginService/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
