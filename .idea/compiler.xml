@@ -18,8 +18,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="CarLoanDataService" target="17" />
       <module name="dummyService" target="17" />
-      <module name="HomeLoanDocsService" target="17" />
       <module name="PersonalLoanDocsServices" target="17" />
     </bytecodeTargetLevel>
   </component>
