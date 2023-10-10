@@ -5,6 +5,7 @@ import com.example.LoanInfoService.service.LoanInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -24,6 +25,16 @@ public class LoanInfoController {
     @GetMapping("/loanInformation")
     public List<LoanInfo> getAllLoans(@RequestHeader String emailid) {
         return service.getAllLoans(emailid);
+    }
+
+    @GetMapping("/loanInformation/{id}")
+    public LoanInfo getLoan(@RequestHeader String emailid, @PathVariable String id ) {
+        return service.getLoan(emailid,id);
+    }
+
+    @PutMapping("/loanInformation/{id}")
+    public LoanInfo updateLoan(@RequestHeader String emailid, @PathVariable String id ,@RequestBody String amount ) {
+        return service.updateLoan(emailid,id,amount);
     }
 
     @GetMapping("/test")
