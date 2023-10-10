@@ -1,10 +1,9 @@
 package com.natwest.PersonalLoanDocsService.service;
 
-import com.natwest.PersonalLoanDocsService.model.FileInfo;
+import com.natwest.PersonalLoanDocsService.model.ZipFileContent;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
-import java.util.List;
 
 public interface PersonalLoanDocService {
     public void uploadFile(MultipartFile aadhaardCard,
@@ -22,4 +21,6 @@ public interface PersonalLoanDocService {
                            ) throws IOException;
 
     public void getAllFiles();
+
+    public ZipFileContent getFileById(String id) throws IOException;
 }

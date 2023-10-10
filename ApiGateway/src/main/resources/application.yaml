@@ -2,10 +2,18 @@ server:
   port: 8765
 
 spring:
+  main:
+    web-application-type: reactive
   application:
     name: api-gateway-service
   cloud:
     gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
       routes:
         - id: personalLoanDocsUpload_route
           uri: "lb://personalLoanDoc-service"
@@ -21,8 +29,12 @@ spring:
           uri: "lb://loanInfo-service"
           predicates:
             - Path=/api/v1/**
-
 #        - id: goldloanService_route
 #          uri: "lb://GoldLoan_service"
 #          predicates:
 #           - Path=/api/v1/loan/gold/docs/**
+#
+#        - id: homeloanService_route
+#          uri: "lb://homeLoan_service"
+#          predicates:
+#            - Path=/api/v1/loan/home/docs/**

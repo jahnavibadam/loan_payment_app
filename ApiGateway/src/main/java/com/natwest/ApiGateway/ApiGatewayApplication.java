@@ -18,8 +18,11 @@ public class ApiGatewayApplication {
 	public RouteLocator apiRoutes(RouteLocatorBuilder builder){
 		return builder.routes()
 				.route("goldloanService_route",route->route.path("/api/v1/loan/gold/docs/**").uri("lb://GoldLoan_Service"))
+				.route("homeloanService_route",route->route.path("/api/v1/loan/home/docs/**").uri("lb://HomeLoan_Service"))
 				.build();
 
 	}
+
+
 
 }

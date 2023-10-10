@@ -6,16 +6,19 @@
         <option value="$PROJECT_DIR$/ApiGateway/pom.xml" />
         <option value="$PROJECT_DIR$/DiscoveryService/pom.xml" />
         <option value="$PROJECT_DIR$/PersonalLoanDocs/pom.xml" />
-        <option value="$USER_HOME$/Downloads/PersonalLoanDocsService/pom.xml" />
+        <option value="$PROJECT_DIR$/../PersonalLoanDocsService/pom.xml" />
         <option value="$PROJECT_DIR$/PersonalLoanDocsService/pom.xml" />
         <option value="$PROJECT_DIR$/../LoanInfoService/pom.xml" />
         <option value="$PROJECT_DIR$/LoanInfoService/pom.xml" />
-        <option value="$USER_HOME$/Downloads/dummyService/pom.xml" />
-        <option value="$USER_HOME$/Downloads/otpservice/pom.xml" />
+        <option value="$PROJECT_DIR$/../dummyService/pom.xml" />
+        <option value="$PROJECT_DIR$/../otpservice/pom.xml" />
         <option value="$PROJECT_DIR$/otpservice/pom.xml" />
         <option value="$PROJECT_DIR$/AuthenticationService/AuthenticationService/pom.xml" />
         <option value="$PROJECT_DIR$/../GoldLoanService -MS/pom.xml" />
         <option value="$PROJECT_DIR$/GoldLoanService -MS/pom.xml" />
+        <option value="$PROJECT_DIR$/HomeLoanDocsService/pom.xml" />
+        <option value="$PROJECT_DIR$/AuthenticationService/pom.xml" />
+        <option value="$PROJECT_DIR$/CarLoanDataService/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

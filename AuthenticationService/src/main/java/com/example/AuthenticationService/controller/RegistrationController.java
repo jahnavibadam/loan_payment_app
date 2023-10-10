@@ -1,14 +1,16 @@
 package AuthenticationService.src.main.java.com.example.AuthenticationService.controller;
 
 import com.example.AuthenticationService.model.User;
-import AuthenticationService.src.main.java.com.example.AuthenticationService.repository.UserRepository;
 import com.example.AuthenticationService.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import javax.validation.Valid;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 import java.util.HashMap;
 import java.util.Map;
 
