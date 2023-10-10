@@ -17,6 +17,8 @@
         <option value="$PROJECT_DIR$/AuthenticationService/AuthenticationService/pom.xml" />
         <option value="$PROJECT_DIR$/../GoldLoanService -MS/pom.xml" />
         <option value="$PROJECT_DIR$/GoldLoanService -MS/pom.xml" />
+        <option value="$PROJECT_DIR$/HomeLoanDocsService/pom.xml" />
+        <option value="$PROJECT_DIR$/AuthenticationService/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

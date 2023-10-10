@@ -1,25 +1,22 @@
 
-b	java:S112_"FDefine and throw a dedicated exception instead of using a generic one.(ŞÛ©Í8›Š³±1
-g	java:S112v"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8›Š³±1
-g	java:S112x"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8›Š³±1
-c	java:S112”"FDefine and throw a dedicated exception instead of using a generic one.(ŞÛ©Í8‘›Š³±1
-h	java:S112³"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‘›Š³±1
-h	java:S112µ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8’›Š³±1
-u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(÷²ë8 ›Š³±1
+b	java:S112Z"FDefine and throw a dedicated exception instead of using a generic one.(ŞÛ©Í8¢ŠÃ±1
+g	java:S112q"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¢ŠÃ±1
+g	java:S112s"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¢ŠÃ±1
+c	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ŞÛ©Í8¢ŠÃ±1
+h	java:S112¯"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¢ŠÃ±1
+h	java:S112±"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¢ŠÃ±1
+u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(÷²ë8’¢ŠÃ±1
 o
-java:S3776I"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(İ•İÜ8Ø›Š³±1
+java:S3776D"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(İ•İÜ8¨¢ŠÃ±1
 c
-java:S1075L"ARefactor your code to get this URI from a customizable parameter.(äÇùƒÿÿÿÿÿ8Ù›Š³±1
-L	java:S106]"+Replace this use of System.out by a logger.(‘¤ğˆùÿÿÿÿ8à›Š³±1
+java:S1075G"ARefactor your code to get this URI from a customizable parameter.(äÇùƒÿÿÿÿÿ8©¢ŠÃ±1
+L	java:S106X"+Replace this use of System.out by a logger.(‘¤ğˆùÿÿÿÿ8­¢ŠÃ±1
 b
-java:S2147w"ECombine this catch with the one at line 117, which has the same body.(ï­£Ä8ã›Š³±1
-p
-java:S3776†"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(×Ûäî8ä›Š³±1
+java:S2147r"ECombine this catch with the one at line 112, which has the same body.(ï­£Ä8¯¢ŠÃ±1
+u
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(®³õàÿÿÿÿÿ8°¢ŠÃ±1
 d
-java:S1075‹"ARefactor your code to get this URI from a customizable parameter.(äÇùƒÿÿÿÿÿ8å›Š³±1
-M	java:S106’"+Replace this use of System.out by a logger.(‘¤ğˆùÿÿÿÿ8æ›Š³±1
+java:S1075†"ARefactor your code to get this URI from a customizable parameter.(äÇùƒÿÿÿÿÿ8±¢ŠÃ±1
+M	java:S106"+Replace this use of System.out by a logger.(‘¤ğˆùÿÿÿÿ8±¢ŠÃ±1
 c
-java:S2147´"ECombine this catch with the one at line 178, which has the same body.(ï­£Ä8è›Š³±1
-Y	java:S125¸"<This block of commented-out lines of code should be removed.(œåâ8è›Š³±1
-H	java:S106Ä"+Replace this use of System.out by a logger.(ĞÒô8é›Š³±1
-M	java:S106Ç"+Replace this use of System.out by a logger.(ü³õÑüÿÿÿÿ8ë›Š³±1
+java:S2147°"ECombine this catch with the one at line 174, which has the same body.(ï­£Ä8³¢ŠÃ±1
