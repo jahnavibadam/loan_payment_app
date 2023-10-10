@@ -2,7 +2,6 @@ package in.natwest.GoldLoanService.controller;
 
 import in.natwest.GoldLoanService.service.GoldLoanService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;

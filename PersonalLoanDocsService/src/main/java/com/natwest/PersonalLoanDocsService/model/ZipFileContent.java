@@ -1,8 +1,5 @@
 package com.natwest.PersonalLoanDocsService.model;
 
-import org.springframework.data.annotation.Id;
-
-import java.util.ArrayList;
 import java.util.List;
 
 

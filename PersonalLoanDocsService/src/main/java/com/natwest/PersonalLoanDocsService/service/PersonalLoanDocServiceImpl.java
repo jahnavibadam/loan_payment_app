@@ -5,13 +5,9 @@ import com.natwest.PersonalLoanDocsService.model.FileProps;
 import com.natwest.PersonalLoanDocsService.model.LoanInfo;
 import com.natwest.PersonalLoanDocsService.model.ZipFileContent;
 import com.natwest.PersonalLoanDocsService.repository.PersonalLoanDocRepository;
-import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.FileSystemResource;
-import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StreamUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
@@ -23,8 +19,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipOutputStream;
 
 @Service
 public class PersonalLoanDocServiceImpl implements PersonalLoanDocService {
