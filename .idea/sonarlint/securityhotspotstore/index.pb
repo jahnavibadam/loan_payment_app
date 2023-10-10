@@ -55,3 +55,7 @@ B
 Motpservice/src/main/java/com/example/otpservice/controller/OtpController.java,3/1/31cd7823c4f2c6c0c40ca67c6aeb60c2eb947358
 {
 Kotpservice/src/main/java/com/example/otpservice/service/OtpServiceImpl.java,b/c/bc7641643a6564b2c42954bd57a475f0d1b27935
+—
+gHomeLoanDocsService/src/main/java/com/natwest/HomeLoanDocsService/controller/HomeLoanDocController.java,b\b\bb8f1c9c273dff805b4c63f6fd105ce2a2fbe43e
+€
+PGoldLoanService -MS/src/main/java/in/natwest/GoldLoanService/model/FileInfo.java,9\a\9ac062bc9f12cfe52d4e40e30b63984d3c37e269
