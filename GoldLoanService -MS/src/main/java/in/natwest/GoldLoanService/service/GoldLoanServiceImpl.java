@@ -50,7 +50,7 @@ public class GoldLoanServiceImpl implements GoldLoanService {
 
         String date = LocalDate.now().toString();
 
-        Object loanInfo = new LoanInfo(UUID.randomUUID().toString(),"personal","pending",emi,tenure,tenure,"10000","0","10000","10.49","0","0",date,"abc@gmail.com",aadhaarNumber);
+        Object loanInfo = new LoanInfo(UUID.randomUUID().toString(),"gold","pending",emi,tenure,tenure,"10000","0","10000","10.49","0","0",date,"abc@gmail.com",aadhaarNumber);
         rabbitTemplate.convertAndSend("rabbitmq_exchangeKey", "rabbitmq_routeKey", loanInfo);
 
         repository.save(file);
