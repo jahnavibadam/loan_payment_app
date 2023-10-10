@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1")
+@CrossOrigin(origins = "*")
 public class LoanInfoController {
 
     @Autowired
@@ -17,6 +18,16 @@ public class LoanInfoController {
     @GetMapping("/loanInformation")
     public List<LoanInfo> getAllLoans(@RequestHeader String emailid) {
         return service.getAllLoans(emailid);
+    }
+
+    @GetMapping("/loanInformation/{id}")
+    public LoanInfo getLoan(@RequestHeader String emailid, @PathVariable String id ) {
+        return service.getLoan(emailid,id);
+    }
+
+    @PutMapping("/loanInformation/{id}")
+    public LoanInfo updateLoan(@RequestHeader String emailid, @PathVariable String id ,@RequestBody String amount ) {
+        return service.updateLoan(emailid,id,amount);
     }
 
     @GetMapping("/test")

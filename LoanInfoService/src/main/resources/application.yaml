@@ -7,7 +7,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/loans_master_db?createDatabaseIfNotExist=true
     username: root
-    password: Ll@mdeehsar2001
+    password: 23729036@Raj
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:

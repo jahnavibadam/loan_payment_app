@@ -9,4 +9,5 @@ import java.util.List;
 @Repository
 public interface LoanInfoRepository extends JpaRepository<LoanInfo, String> {
    public List<LoanInfo> findByEmailid(String emailid);
+   public LoanInfo findByEmailidAndLoanId(String emailid, String loanId);
 }
