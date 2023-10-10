@@ -55,7 +55,3 @@ B
 Motpservice/src/main/java/com/example/otpservice/controller/OtpController.java,3/1/31cd7823c4f2c6c0c40ca67c6aeb60c2eb947358
 {
 Kotpservice/src/main/java/com/example/otpservice/service/OtpServiceImpl.java,b/c/bc7641643a6564b2c42954bd57a475f0d1b27935
-{
-Ksrc/main/java/in/natwest/GoldLoanService/controller/GoldLoanController.java,5\0\500070582739840063b28e2988ec18a25136bb42
-x
-Hsrc/main/java/in/natwest/GoldLoanService/GoldLoanServiceApplication.java,c\d\cd9262a5ba6a28a600933a772ec5faf935fff098
