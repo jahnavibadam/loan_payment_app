@@ -1,0 +1,11 @@
+
+r
+java:S3655,"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(Œ¢Ÿáÿÿÿÿÿ8öžŽ ±1
+m
+java:S36557"PCall "otpModel.isPresent()" or "!otpModel.isEmpty()" before accessing the value.(»™Éú8öžŽ ±1
+:
+java:S2119"Save and re-use this "Random".(¼ÝÅf8ýžŽ ±1
+Y
+java:S1854)"<Remove this useless assignment to local variable "response".(”³õŒ8þžŽ ±1
+J
+java:S1481)"-Remove this unused "response" local variable.(”³õŒ8ŸŽ ±1

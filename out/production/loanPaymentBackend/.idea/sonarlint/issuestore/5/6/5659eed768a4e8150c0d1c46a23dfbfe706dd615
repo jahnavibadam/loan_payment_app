@@ -1,0 +1,5 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¨“¸ò8ùÅÎ—±1
+^	java:S107""BConstructor has 15 parameters, which is greater than 7 authorized.(ÊÔÍ‰8å•˜±1
+R
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ8çåÊ™±1
