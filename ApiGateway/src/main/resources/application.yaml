@@ -6,6 +6,12 @@ spring:
     name: api-gateway-service
   cloud:
     gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
       routes:
         - id: personalLoanDocsUpload_route
           uri: "lb://personalLoanDoc-service"
