@@ -1,0 +1,12 @@
+
+b	java:S112Y"FDefine and throw a dedicated exception instead of using a generic one.(ŞÛ©Í8ÆÏÍ™±1
+g	java:S112p"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÇÏÍ™±1
+g	java:S112r"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÇÏÍ™±1
+u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(÷²ë8ËÏÍ™±1
+o
+java:S3776C"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(İ•İÜ8ãÏÍ™±1
+c
+java:S1075F"ARefactor your code to get this URI from a customizable parameter.(äÇùƒÿÿÿÿÿ8æÏÍ™±1
+L	java:S106W"+Replace this use of System.out by a logger.(‘¤ğˆùÿÿÿÿ8ôÏÍ™±1
+b
+java:S2147q"ECombine this catch with the one at line 111, which has the same body.(ï­£Ä8öÏÍ™±1
