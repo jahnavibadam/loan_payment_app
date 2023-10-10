@@ -9,12 +9,13 @@
         <module name="PersonalLoanDocsService" />
         <module name="otpservice" />
         <module name="DiscoveryService" />
-        <module name="AuthenticationService" />
+        <module name="GoldLoanService" />
         <module name="ApiGateway" />
         <module name="LoanInfoService" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="AuthenticationService" target="20" />
       <module name="dummyService" target="17" />
       <module name="PersonalLoanDocsServices" target="17" />
     </bytecodeTargetLevel>
@@ -24,6 +25,7 @@
       <module name="ApiGateway" options="-parameters" />
       <module name="AuthenticationService" options="-parameters" />
       <module name="DiscoveryService" options="-parameters" />
+      <module name="GoldLoanService" options="-parameters" />
       <module name="LoanInfoService" options="-parameters" />
       <module name="PersonalLoanDocsService" options="-parameters" />
       <module name="PersonalLoanDocsServices" options="-parameters" />

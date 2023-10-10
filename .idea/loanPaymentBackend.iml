@@ -7,6 +7,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-commons:4.0.4" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:3.1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:3.1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-mongodb:4.1.4" level="project" />
   </component>
   <component name="SonarLintModuleSettings">
     <option name="uniqueId" value="5b38ab4e-aea4-4cb6-baba-5bf72958957a" />
