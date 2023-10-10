@@ -13,6 +13,7 @@
         <module name="DiscoveryService" />
         <module name="GoldLoanService" />
         <module name="HomeLoanDocsService" />
+        <module name="CarLoanDocsService" />
         <module name="AuthenticationService" />
         <module name="ApiGateway" />
       </profile>
@@ -27,6 +28,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ApiGateway" options="-parameters" />
       <module name="AuthenticationService" options="-parameters" />
+      <module name="CarLoanDocsService" options="-parameters" />
       <module name="DiscoveryService" options="-parameters" />
       <module name="GoldLoanService" options="-parameters" />
       <module name="HomeLoanDocsService" options="-parameters" />

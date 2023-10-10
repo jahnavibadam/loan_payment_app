@@ -2,6 +2,8 @@ server:
   port: 8765
 
 spring:
+  main:
+    web-application-type: reactive
   application:
     name: api-gateway-service
   cloud:
@@ -21,7 +23,6 @@ spring:
           uri: "lb://loanInfo-service"
           predicates:
             - Path=/api/v1/**
-
 #        - id: goldloanService_route
 #          uri: "lb://GoldLoan_service"
 #          predicates:
