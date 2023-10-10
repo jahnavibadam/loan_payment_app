@@ -1,10 +1,10 @@
 package AuthenticationService.src.main.java.com.example.AuthenticationService.service;
 
+import AuthenticationService.src.main.java.com.example.AuthenticationService.repository.UserRepository;
+import com.example.AuthenticationService.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
-import com.example.AuthenticationService.model.User;
-import AuthenticationService.src.main.java.com.example.AuthenticationService.repository.UserRepository;
 
 @Service
 public class UserService {

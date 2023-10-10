@@ -1,13 +1,12 @@
 package com.natwest.PersonalLoanDocsService.service;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.natwest.PersonalLoanDocsService.model.FileInfo;
 import com.natwest.PersonalLoanDocsService.model.FileProps;
 import com.natwest.PersonalLoanDocsService.model.LoanInfo;
+import com.natwest.PersonalLoanDocsService.model.ZipFileContent;
 import com.natwest.PersonalLoanDocsService.repository.PersonalLoanDocRepository;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -17,12 +16,12 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
-public class PersonalLoanDocServiceImpl implements PersonalLoanDocService{
+public class PersonalLoanDocServiceImpl implements PersonalLoanDocService {
 
     @Autowired
     private PersonalLoanDocRepository personalLoanDocRepository;
@@ -42,6 +41,8 @@ public class PersonalLoanDocServiceImpl implements PersonalLoanDocService{
                            String emi,
                            String aadhaarNumber, String firstName, String lastName, String panNumber) throws IOException {
         FileInfo file = new FileInfo();
+        String loanId = UUID.randomUUID().toString();
+        file.setId(loanId);
         file.setLoanType("personal");
         file.setAadhaarNumber(aadhaarNumber);
         file.setTenure(tenure);
@@ -56,7 +57,7 @@ public class PersonalLoanDocServiceImpl implements PersonalLoanDocService{
 
         String date = LocalDate.now().toString();
 
-        Object loanInfo = new LoanInfo(UUID.randomUUID().toString(),"personal","pending",emi,tenure,tenure,"10000","0","10000","10.49","0","0",date,"abc@gmail.com",aadhaarNumber);
+        Object loanInfo = new LoanInfo(loanId, "personal", "pending", emi, tenure, tenure, "10000", "0", "10000", "10.49", "0", "0", date, "abc@gmail.com", aadhaarNumber);
         rabbitTemplate.convertAndSend("rabbitmq_exchangeKey", "rabbitmq_routeKey", loanInfo);
 
         personalLoanDocRepository.save(file);
@@ -69,7 +70,7 @@ public class PersonalLoanDocServiceImpl implements PersonalLoanDocService{
 
         String baseFilePath = "/Users/ramkumar/Desktop/personalLoanDocs/";
 
-        fileInfoList.forEach(file->{
+        fileInfoList.forEach(file -> {
             List<FileProps> allDocs = new ArrayList<>();
             allDocs.add(file.getAadhaarCard());
             allDocs.add(file.getPanCard());
@@ -122,5 +123,65 @@ public class PersonalLoanDocServiceImpl implements PersonalLoanDocService{
         fileProps.setFileName(file.getOriginalFilename());
         fileProps.setData(file.getBytes());
         fileProps.setContentType(file.getContentType());
+    }
+
+    @Override
+    public ZipFileContent getFileById(String id) throws IOException {
+        Optional<FileInfo> fileInfo = personalLoanDocRepository.findById(id);
+        List<String> fileNames = new ArrayList<>();
+        if (fileInfo.isPresent()) {
+            FileInfo file = fileInfo.get();
+            String baseFilePath = "/Users/ramkumar/Desktop/personalLoanDocs/";
+            String aadhaarNumber = file.getAadhaarNumber();
+            String filePath = baseFilePath + aadhaarNumber + "_p_" + id + '/';
+
+            File folder = new java.io.File(filePath);
+            if (!folder.exists()) {
+                if (folder.mkdirs()) {
+                    System.out.println("Folder created successfully.");
+                } else {
+                    throw new RuntimeException("Failed to create the folder.");
+                }
+            }
+
+            List<FileProps> allDocs = new ArrayList<>();
+            allDocs.add(file.getAadhaarCard());
+            allDocs.add(file.getPanCard());
+            allDocs.add(file.getSignatureProof());
+            allDocs.add(file.getSignatureProof());
+            allDocs.add(file.getBankStatements());
+            allDocs.add(file.getAddressProof());
+
+            allDocs.forEach(doc -> {
+                String originalFileName = doc.getFileName();
+                String modifiedFileName = originalFileName;
+                int count = 1;
+
+                // Check for existing files with the same name
+                while (new java.io.File(filePath + modifiedFileName).exists()) {
+                    int dotIndex = originalFileName.lastIndexOf('.');
+                    String fileNameWithoutExtension = dotIndex > 0 ? originalFileName.substring(0, dotIndex) : originalFileName;
+                    String fileExtension = dotIndex > 0 ? originalFileName.substring(dotIndex) : "";
+                    modifiedFileName = fileNameWithoutExtension + " (" + count + ")" + fileExtension;
+                    fileNames.add(modifiedFileName);
+                    count++;
+                }
+
+                try {
+                    FileOutputStream fos = new FileOutputStream(filePath + modifiedFileName);
+                    byte[] data = doc.getData();
+                    fos.write(data);
+                } catch (FileNotFoundException e) {
+                    throw new RuntimeException(e);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+
+            });
+
+            return new ZipFileContent(UUID.randomUUID().toString(),filePath,fileNames);
+        }
+
+        return null;
     }
 }

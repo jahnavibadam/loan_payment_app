@@ -2,7 +2,6 @@ package com.example.otpservice.controller;
 
 import com.example.otpservice.service.OtpService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/v1/otp")

@@ -1,6 +1,9 @@
 package AuthenticationService.src.main.java.com.example.AuthenticationService.controller;
 
 
+import com.example.AuthenticationService.jwt.JwtUtil;
+import com.example.AuthenticationService.model.User;
+import com.example.AuthenticationService.model.UserResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -14,10 +17,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.example.AuthenticationService.jwt.JwtUtil;
-import com.example.AuthenticationService.model.User;
-import com.example.AuthenticationService.model.UserResponse;
 
 @RestController
 public class AuthController {

@@ -21,3 +21,8 @@ spring:
           uri: "lb://loanInfo-service"
           predicates:
             - Path=/api/v1/**
+
+#        - id: goldloanService_route
+#          uri: "lb://GoldLoan_service"
+#          predicates:
+#           - Path=/api/v1/loan/gold/docs/**
