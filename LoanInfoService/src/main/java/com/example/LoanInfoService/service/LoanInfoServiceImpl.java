@@ -25,10 +25,25 @@ public class LoanInfoServiceImpl implements LoanInfoService{
     public List<LoanInfo> getAllLoans(String emailid){
         return loanInfoRepository.findByEmailid(emailid);
     }
-//
-//    @Override
-//    Loan updateLoan(String email,Loan newLoan, String id){
-//        // various operations according to new loan
-//        return new Loan();
-//    }
+
+    @Override
+    public List<LoanInfo> getAllLoans(){
+        return loanInfoRepository.findAll();
+    }
+
+    @Override
+    public String approveLoanById(String loanId) {
+        LoanInfo loanInfo = loanInfoRepository.getByLoanId(loanId);
+        loanInfo.setLoanStatus("approved");
+        loanInfoRepository.save(loanInfo);
+        return "Approved";
+    }
+
+    @Override
+    public String rejectLoanById(String loanId) {
+        LoanInfo loanInfo = loanInfoRepository.getByLoanId(loanId);
+        loanInfo.setLoanStatus("rejected");
+        loanInfoRepository.save(loanInfo);
+        return "Rejected";
+    }
 }

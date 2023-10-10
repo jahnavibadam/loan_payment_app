@@ -1,8 +1,7 @@
 
-u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(÷²ë8É›±°1
-^	java:S107
-"=Method has 12 parameters, which is greater than 7 authorized.(é£Ã´øÿÿÿÿ8Í›±°1
+u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(÷²ë8·–°±1
+^	java:S107"=Method has 12 parameters, which is greater than 7 authorized.(é£Ã´øÿÿÿÿ8º–°±1
 l
-java:S1128"ORemove this unused import 'com.natwest.PersonalLoanDocsService.model.FileInfo'.(Âèù¦8Ğ›±°1
+java:S1128"ORemove this unused import 'com.natwest.PersonalLoanDocsService.model.FileInfo'.(Âèù¦8½–°±1
 M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8Ğ›±°1
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8½–°±1
